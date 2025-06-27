@@ -528,7 +528,7 @@ export default function Navbar() {
                 Apply
               </Button>
             </Link>
-            <Link href="/login">
+            <Link href="https://snbpschool.co.in/LoginPage.aspx">
               <Button className="bg-primary hover:bg-primary/90 text-white font-semibold">
                 <LogIn className="mr-2 h-4 w-4" />
                 Login
@@ -599,7 +599,7 @@ export default function Navbar() {
                     </Button>
                   </Link>
                 
-                  <Link href="/login" onClick={() => setIsMenuOpen(false)}>
+                  <Link href="https://snbpschool.co.in/LoginPage.aspx" onClick={() => setIsMenuOpen(false)}>
                     <Button className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-6 text-lg">
                       <LogIn className="mr-2 h-5 w-5" />
                      Login

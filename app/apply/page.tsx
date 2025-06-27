@@ -15,8 +15,10 @@ export default function EnquiryForm() {
         <h1 className="text-2xl font-semibold text-center text-gray-800 mb-6">
           Enquiry Form
         </h1>
-
-        <form className="space-y-6">
+{/* action="https://formsubmit.co/snbpskeshavnagar@gmail.com" */}
+        <form className="space-y-6" action="https://formsubmit.co/manasizite@gmail.com"
+  method="POST"
+>
           {/* Student's Information */}
           <div>
             <label className="block text-sm font-medium text-gray-700">STUDENT’S NAME:</label>
