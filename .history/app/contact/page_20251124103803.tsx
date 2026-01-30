@@ -32,7 +32,7 @@ const ContactUs = () => {
                   <p className="text-gray-600 leading-relaxed space-y-1.5">
                     <span className="block">SNBP's International School, Manjri</span>
                     <span className="block">126/2A Manjri-Keshavnagar,</span>
-                    <span className="block">Near Shivkrushshn, Mangal Karyalay,</span>
+                    <span className="block">Near Shivkrishna, Mangal Karyalay,</span>
                     <span className="block">Pune - 412307</span>
                   </p>
                 </div>

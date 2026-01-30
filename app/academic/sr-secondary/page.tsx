@@ -20,7 +20,7 @@ export default function Page() {
                 <span className="block w-14 h-1 bg-gradient-to-r from-primary to-blue-400 mt-2 rounded-full" />
               </h3>
               <ul className="space-y-2">
-                {["Primary", "Pre-Primary", "Secondary", "Senior Secondary"].map((item) => (
+                {["Pre-Primary","Primary", "Secondary", "Senior Secondary"].map((item) => (
                   <li key={item}>
                     <Link
                       href={`/academic/${item.toLowerCase().replace(" ", "-")}`}

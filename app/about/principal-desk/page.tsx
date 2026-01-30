@@ -76,7 +76,7 @@ export default function PrincipalDeskPage() {
               <div className="flex flex-col md:flex-row gap-6 items-start mb-6">
                 <div className="relative h-64 w-full md:w-1/3 rounded-lg overflow-hidden transition-all opacity-0 transform motion-safe:opacity-100 motion-safe:translate-x-0 motion-safe:animate-[fadeIn_1s]">
                   <Image
-                    src="/placeholder.svg?height=400&width=300"
+                    src="/snbp-principle.jpg"
                     alt="Principal"
                     fill
                     className="object-cover"

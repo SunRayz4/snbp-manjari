@@ -439,6 +439,7 @@ const menuItems: MenuItem[] = [
       { name: "Primary", href: "/academic/primary" },
       { name: "Secondary", href: "/academic/secondary" },
       { name: "Senior Secondary", href: "/academic/sr-secondary" },
+       { name: "Circular", href: "/academic/circular" },
     ],
   },
   { name: "Facilities", href: "/facilities" },

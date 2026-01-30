@@ -330,7 +330,7 @@ import { FaBook, FaFlask, FaBus, FaLaptopCode, FaChartLine, FaFutbol, FaChalkboa
 import Image from 'next/image'
 const facilities = [
   {
-    title: "SMART CLASSROOM",
+    title: "LANGUAGE LIBRARY",
     description: "At SNBP's School, classrooms are equipped with DigiClass solutions, providing e-learning content based on Cognitive Learning Approach.",
     image: "secondary3.JPG",
     icon: <FaChalkboardTeacher className="w-6 h-6" />,
@@ -344,7 +344,7 @@ const facilities = [
     color: "bg-orange-100",
   },
   {
-    title: "SPORTS",
+    title: "SKATING",
     description: "Excellent sports facilities include indoor and outdoor games with expert trainers.",
     image: "sports.jpg",
     icon: <FaFutbol className="w-6 h-6" />,

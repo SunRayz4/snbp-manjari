@@ -5,7 +5,7 @@
 // import Image from "next/image";
 // import { ArrowLeft } from "lucide-react";
 
-
+// // Category data and image paths
 // const categories = [
 //   { name: "independence-day", cover: "/images/independence-day/1.JPG" },
 //   { name: "republic-day", cover: "/images/republic-day/1.JPG" },
@@ -35,6 +35,7 @@
 // export default function GalleryHome() {
 //   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
+//   // Helper function to format category names
 //   const formatCategoryName = (name: string) =>
 //     name
 //       .split("-")
@@ -53,6 +54,7 @@
 //           </span>
 //         </h1>
 
+//         {/* Category selection view */}
 //         {!selectedCategory ? (
 //           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 //             {categories.map((cat) => (
@@ -82,6 +84,7 @@
 //             ))}
 //           </div>
 //         ) : (
+//           // Category detail view
 //           <div className="space-y-8">
 //             <div className="flex items-center justify-between mb-10">
 //               <button
@@ -124,37 +127,38 @@ import { useState } from "react";
 import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 
+const assetBaseUrl = process.env.NEXT_PUBLIC_STATIC_ASSETS;
+
 // Category data and image paths
 const categories = [
-  { name: "independence-day", cover: "/images/independence-day/1.JPG" },
-  { name: "republic-day", cover: "/images/republic-day/1.JPG" },
-  { name: "annual-day", cover: "/images/annual-day/1.JPG" },
-  { name: "environment-day", cover: "/images/environment-day/1.JPG" },
-  { name: "science-exhibition", cover: "/images/science-exhibition/1.JPG" },
-  { name: "marathi-day", cover: "/images/marathi-day/1.JPG" },
-  { name: "dandiya-celebration", cover: "/images/dandiya-celebration/1.JPG" },
-  { name: "rakhi-celebration", cover: "/images/rakhi-celebration/1.JPG" },
-  { name: "smart-classrooms", cover: "/images/smart-classrooms/1.JPG" },
+  { name: "independence-day", cover: `${assetBaseUrl}/images/independence-day/1.JPG` },
+  { name: "republic-day", cover: `${assetBaseUrl}/images/republic-day/1.JPG` },
+  { name: "annual-day", cover: `${assetBaseUrl}/images/annual-day/1.JPG` },
+  { name: "environment-day", cover: `${assetBaseUrl}/images/environment-day/1.JPG` },
+  { name: "science-exhibition", cover: `${assetBaseUrl}/images/science-exhibition/1.JPG` },
+  { name: "marathi-day", cover: `${assetBaseUrl}/images/marathi-day/1.JPG` },
+  { name: "dandiya-celebration", cover: `${assetBaseUrl}/images/dandiya-celebration/1.JPG` },
+  { name: "rakhi-celebration", cover: `${assetBaseUrl}/images/rakhi-celebration/1.JPG` },
+  { name: "smart-classrooms", cover: `${assetBaseUrl}/images/smart-classrooms/1.JPG` },
 ];
 
 const categoryImages: Record<string, string[]> = {
-  "independence-day": Array.from({ length: 10 }, (_, i) => `/images/independence-day/${i + 1}.JPG`),
-  "republic-day": Array.from({ length: 10 }, (_, i) => `/images/republic-day/${i + 1}.JPG`),
-  "annual-day": Array.from({ length: 10 }, (_, i) => `/images/annual-day/${i + 1}.JPG`),
-  "marathi-day": Array.from({ length: 4 }, (_, i) => `/images/marathi-day/${i + 1}.JPG`),
-  "science-exhibition": Array.from({ length: 10 }, (_, i) => `/images/science-exhibition/${i + 1}.JPG`),
-  "children-day": Array.from({ length: 10 }, (_, i) => `/images/children-day/${i + 1}.JPG`),
-  "dandiya-celebration": Array.from({ length: 9 }, (_, i) => `/images/dandiya-celebration/${i + 1}.JPG`),
-  "constitutional-day": Array.from({ length: 10 }, (_, i) => `/images/constitutional-day/${i + 1}.JPG`),
-  "environment-day": Array.from({ length: 6 }, (_, i) => `/images/environment-day/${i + 1}.JPG`),
-  "smart-classrooms": Array.from({ length: 8 }, (_, i) => `/images/smart-classrooms/${i + 1}.JPG`),
-  "rakhi-celebration": Array.from({ length: 5}, (_, i) => `/images/rakhi-celebration/${i + 1}.JPG`),
+  "independence-day": Array.from({ length: 10 }, (_, i) => `${assetBaseUrl}/images/independence-day/${i + 1}.JPG`),
+  "republic-day": Array.from({ length: 10 }, (_, i) => `${assetBaseUrl}/images/republic-day/${i + 1}.JPG`),
+  "annual-day": Array.from({ length: 10 }, (_, i) => `${assetBaseUrl}/images/annual-day/${i + 1}.JPG`),
+  "marathi-day": Array.from({ length: 4 }, (_, i) => `${assetBaseUrl}/images/marathi-day/${i + 1}.JPG`),
+  "science-exhibition": Array.from({ length: 10 }, (_, i) => `${assetBaseUrl}/images/science-exhibition/${i + 1}.JPG`),
+  "children-day": Array.from({ length: 10 }, (_, i) => `${assetBaseUrl}/images/children-day/${i + 1}.JPG`),
+  "dandiya-celebration": Array.from({ length: 9 }, (_, i) => `${assetBaseUrl}/images/dandiya-celebration/${i + 1}.JPG`),
+  "constitutional-day": Array.from({ length: 10 }, (_, i) => `${assetBaseUrl}/images/constitutional-day/${i + 1}.JPG`),
+  "environment-day": Array.from({ length: 6 }, (_, i) => `${assetBaseUrl}/images/environment-day/${i + 1}.JPG`),
+  "smart-classrooms": Array.from({ length: 8 }, (_, i) => `${assetBaseUrl}/images/smart-classrooms/${i + 1}.JPG`),
+  "rakhi-celebration": Array.from({ length: 5 }, (_, i) => `${assetBaseUrl}/images/rakhi-celebration/${i + 1}.JPG`),
 };
 
 export default function GalleryHome() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  // Helper function to format category names
   const formatCategoryName = (name: string) =>
     name
       .split("-")
@@ -173,7 +177,6 @@ export default function GalleryHome() {
           </span>
         </h1>
 
-        {/* Category selection view */}
         {!selectedCategory ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {categories.map((cat) => (
@@ -203,7 +206,6 @@ export default function GalleryHome() {
             ))}
           </div>
         ) : (
-          // Category detail view
           <div className="space-y-8">
             <div className="flex items-center justify-between mb-10">
               <button
@@ -216,7 +218,7 @@ export default function GalleryHome() {
               <h2 className="text-3xl font-bold text-slate-800 text-center">
                 {formatCategoryName(selectedCategory)}
               </h2>
-              <div className="w-[136px]" /> {/* Maintains layout balance */}
+              <div className="w-[136px]" />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

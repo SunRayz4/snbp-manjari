@@ -14,7 +14,11 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  images: {
+  // images: {
+  //   unoptimized: true,
+  // },
+   images: {
+    domains: ['snbpschool.co.in'],
     unoptimized: true,
   },
   experimental: {

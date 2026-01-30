@@ -33,7 +33,7 @@ const ContactUs = () => {
                     <span className="block">SNBP's International School, Manjri</span>
                     <span className="block">126/2A Manjri-Keshavnagar,</span>
                     <span className="block">Near Shivkrushshn, Mangal Karyalay,</span>
-                    <span className="block">Pune - 412307</span>
+                    <span className="block">Pune - 411036</span>
                   </p>
                 </div>
               </div>
@@ -76,7 +76,7 @@ const ContactUs = () => {
                     <div className="flex items-center gap-2">
                       <span className="text-gray-600">Office:</span>
                       <a href="tel:8446534553" className="font-medium text-gray-900 hover:text-blue-600">
-                      +91 8956351916 / 8446534553
+                      +91 8080774499 / 8956351916 / 8999395453
                       </a>
                     </div>
                    

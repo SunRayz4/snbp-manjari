@@ -26,7 +26,7 @@ function Page() {
             <h3 className="text-1xl font-semibold text-primary">Total No of Teachers</h3>
           </div>
           <div className="flex justify-between items-center">
-            <p className="text-lg font-medium text-gray-700">32</p>
+            <p className="text-lg font-medium text-gray-700">80</p>
           </div>
         </div>
 
@@ -37,7 +37,7 @@ function Page() {
             <h3 className="text-1xl font-semibold text-primary">PGT</h3>
           </div>
           <div className="flex justify-between items-center">
-            <p className="text-lg font-medium text-gray-700">17</p>
+            <p className="text-lg font-medium text-gray-700">24</p>
           </div>
         </div>
 
@@ -48,7 +48,7 @@ function Page() {
             <h3 className="text-1xl font-semibold text-primary">TGT</h3>
           </div>
           <div className="flex justify-between items-center">
-            <p className="text-lg font-medium text-gray-700">03</p>
+            <p className="text-lg font-medium text-gray-700">46</p>
           </div>
         </div>
 
@@ -59,7 +59,7 @@ function Page() {
             <h3 className="text-xl font-semibold text-primary">PRT</h3>
           </div>
           <div className="flex justify-between items-center">
-            <p className="text-lg font-medium text-gray-700">9</p>
+            <p className="text-lg font-medium text-gray-700">10</p>
           </div>
         </div>
 
@@ -70,7 +70,7 @@ function Page() {
             <h3 className="text-2xl font-semibold text-primary">Teacher-Student Ratio</h3>
           </div>
           <div className="flex justify-between items-center">
-            <p className="text-lg font-medium text-gray-700">35:1</p>
+            <p className="text-lg font-medium text-gray-700">40:2</p>
           </div>
         </div>
 
